@@ -6,5 +6,12 @@
   "devDependencies": {
     "@playwright/test": "^1.65.1",
     "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:bonus": "playwright test tests/bonus-features.spec.ts",
+    "report": "playwright show-report"
   }
 }
